@@ -39,3 +39,44 @@ document.addEventListener('keydown',event => {
     setTimeout(enhanceAccessibility,650);
   }
 });
+
+// Keep the reference's contact service, while making pending and failure states
+// usable. No message is sent until the visitor submits a valid form.
+document.addEventListener('submit',async event => {
+  const form = event.target;
+  if (location.pathname.replace(/\/$/,'') !== '/contact' || !(form instanceof HTMLFormElement)) return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  if (!form.reportValidity() || form.dataset.sending === 'true') return;
+  form.dataset.sending = 'true';
+  const submit = form.querySelector('[type="submit"]');
+  if (submit) submit.disabled = true;
+  let status = form.querySelector('.replica-form-status');
+  if (!status) {
+    status = document.createElement('p');
+    status.className = 'replica-form-status';
+    status.setAttribute('role','status');
+    status.setAttribute('aria-live','polite');
+    form.append(status);
+  }
+  status.dataset.state = 'pending';
+  status.textContent = 'Sending your message…';
+  try {
+    const response = await fetch('https://formspree.io/f/xpwyekda', {
+      method:'POST', headers:{Accept:'application/json'},
+      body:new FormData(form), signal:AbortSignal.timeout(15000)
+    });
+    const result = await response.json();
+    if (!response.ok || !result.ok) throw new Error('Message not accepted');
+    status.dataset.state = 'success';
+    status.textContent = 'Thank you. Your message has been sent.';
+    form.reset();
+    form.querySelectorAll('.inputLabel.active,textarea.active').forEach(e=>e.classList.remove('active'));
+  } catch {
+    status.dataset.state = 'error';
+    status.textContent = 'Your message could not be sent. Please check your connection and try again. Your message is still here.';
+  } finally {
+    form.dataset.sending = 'false';
+    if (submit) submit.disabled = false;
+  }
+},true);
