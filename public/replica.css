@@ -1,0 +1,11 @@
+/* Small accessibility improvements that preserve the reference design. */
+html { overflow-x: clip; }
+body { min-width: 320px; }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

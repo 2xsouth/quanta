@@ -1,0 +1,6 @@
+dist/
+reference/
+node_modules/
+.sites-runtime/
+*.tar.gz
+*.log
