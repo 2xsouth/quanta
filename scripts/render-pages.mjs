@@ -11,7 +11,7 @@ function payload(route) {
  encode({tag:'ShallowReactive',value:{data:{tag:'ShallowReactive',value:data},state:{tag:'Reactive',value:{}},once:{tag:'Set'},_errors:{tag:'ShallowReactive',value:{}},serverRendered:false,path:route,pinia:{}}});
  return json(values);
 }
-const head=await fs.readFile('templates/head.html','utf8');
+const head=(await fs.readFile('templates/head.html','utf8')).replace('src="/_nuxt/DC_P54Ec.js"','src="/boot.js"');
 const config={public:{gaMeasurementId:'',sanity:{additionalClients:{},apiVersion:'2021-03-25',dataset:'production',disableSmartCdn:true,perspective:'raw',projectId:'quanta',stega:{},token:'',useCdn:false,visualEditing:false}},app:{baseURL:'/',buildId:'quanta-2026',buildAssetsDir:'/_nuxt/',cdnURL:''}};
 await fs.writeFile('public/content.js',`window.__QUANTA_CONTENT__=${json(data)};\nwindow.__QUANTA_CONTACT__=${json(contact)};\n`);
 for(const route of Object.keys(routeKeys)) {

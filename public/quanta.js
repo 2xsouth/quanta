@@ -1,5 +1,11 @@
 // Accessibility and inquiry behavior shared by every route.
 function enhance(){
+ document.querySelectorAll('.feature-btn').forEach(button=>button.setAttribute('aria-pressed',String(button.classList.contains('active'))));
+ document.querySelectorAll('.features-image').forEach((figure,index)=>{
+  figure.setAttribute('role','button');figure.tabIndex=0;
+  const title=window.__QUANTA_CONTENT__?.['sanity-lJDHgocMvY']?.features?.[index]?.title?.replace(/\n/g,' ');
+  figure.setAttribute('aria-label',`show ${title||'capability'}`);figure.setAttribute('aria-pressed',String(figure.classList.contains('active')));
+ });
  document.querySelectorAll('a').forEach(a=>{
   if(a.getAttribute('href')==='/'&&!a.textContent.trim())a.setAttribute('aria-label','quanta home');
   if(a.getAttribute('href')?.startsWith('/'))a.removeAttribute('target');
@@ -23,8 +29,22 @@ let scheduled=false;
 new MutationObserver(()=>{if(!scheduled){scheduled=true;requestAnimationFrame(()=>{scheduled=false;enhance();});}}).observe(document.body,{childList:true,subtree:true});
 document.addEventListener('click',()=>setTimeout(enhance,400));
 window.addEventListener('resize',enhance);
+let headerResizeTimer;
+window.addEventListener('resize',()=>{
+ clearTimeout(headerResizeTimer);
+ headerResizeTimer=setTimeout(()=>{
+  const header=document.querySelector('.header');
+  if(!header)return;
+  // Breakpoint changes rebuild the original entrance timeline. The entrance
+  // event has already fired, so restore the navigation after that rebuild.
+  header.style.opacity='1';header.style.transform='translateY(0)';
+  header.querySelectorAll('a').forEach(a=>{a.style.opacity='1';a.style.transform='none';});
+  enhance();
+ },350);
+});
 window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(()=>{scheduled=false;enhance();});}},{passive:true});
 document.addEventListener('keydown',event=>{
+ if((event.key==='Enter'||event.key===' ')&&event.target.matches('.features-image')){event.preventDefault();event.target.click();}
  const nav=document.querySelector('.nav-links'),menu=document.querySelector('.btn-hm');
  if(!nav||!matchMedia('(max-width:1023px)').matches||nav.style.pointerEvents!=='auto')return;
  if(event.key==='Escape'){nav.querySelector('button')?.click();menu?.focus();setTimeout(enhance,400);}

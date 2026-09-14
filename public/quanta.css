@@ -28,7 +28,15 @@ img[alt="south, founder of quanta"]{object-position:50% 66%;filter:brightness(1.
 .inputWrapper input,.inputWrapper textarea{font-size:max(1.8rem,16px)!important}
 .inputWrapper textarea{min-height:8rem}
 @media(min-width:1024px){.header .nav-links{margin-left:auto}.quanta-footer{padding-top:3rem;padding-bottom:3rem}}
+@media(min-width:1024px){
+ .header .nav-links{opacity:1!important;pointer-events:auto!important}
+ .quanta-footer.ds\:fixed{position:fixed;bottom:0;left:0;width:100%}
+ .quanta-contact{inset:0;width:100%}
+ .quanta-contact>.site-grid{width:100%}
+}
 @media(max-width:1023px){
+ .features-image{transform:none!important}
+ .features-details>div:has(>.features-image){overflow:hidden}
  .quanta-logo{width:16rem;max-width:175px}
  .header .nav-links{gap:4rem}
  .nav-links .nav-contact{border:0;border-radius:0;padding:0}

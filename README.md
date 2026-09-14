@@ -1,6 +1,6 @@
-# Oevra recreation
+# quanta
 
-A high fidelity, locally served recreation of the public website at https://oevra.com, captured September 2026. It preserves the reference's compiled Vue/Nuxt components, GSAP scroll choreography, WebGL background, typography, content, artwork, feature tabs, accordions, testimonials, responsive navigation, and four public pages. This is an asset-preserving static recreation, not a rewrite of its original Vue source.
+The quanta website presents an ai engineering and automation company across four routes. It preserves the existing compiled Vue/Nuxt components, GSAP scroll choreography, WebGL background and locally hosted typography. The editorial content is now owned locally, with no connection to the former brand's CMS or inquiry service.
 
 ## Run
 
@@ -17,15 +17,27 @@ The production output is `dist/`. The development server supports `--port 3001`;
 
 ## Structure
 
-- `public/`: self-hosted HTML, runtime, fonts, graphics and original photographs.
-- `public/replica.css` and `public/replica.js`: accessibility and responsive refinements.
+- `content/quanta.mjs`: all authored page copy, metadata, and public contact configuration. Keep display copy lowercase and preserve technical identifiers.
+- `scripts/render-pages.mjs`: generates all four route documents and local content payloads during development startup and production builds.
+- `public/`: self-hosted HTML, runtime, fonts, graphics and the supplied founder photograph.
+- `public/quanta.css` and `public/quanta.js`: brand, accessibility, responsive and inquiry refinements.
+- `public/boot.js`: waits for the fonts before starting line-splitting animations.
 - `scripts/build.mjs`: dependency-free static production build.
 - `scripts/check.mjs`: page, resource and module integrity checks.
-- `scripts/capture-reference.mjs`: explicit upstream recapture utility. Not used by normal development or builds.
-- `scripts/localize.mjs`: one-time asset localization for the capture.
+- Capture, inspection and migration scripts are historical maintenance utilities. Do not rerun them during routine editing; they can restore an earlier runtime state. The original component keys remain for compatibility; this checkout does not contain the original Vue source.
 
-## Service boundaries
+## Inquiry delivery configuration
 
-Login, signup, trial and subscription links intentionally retain the original `app.oevra.com` destinations. Accounts, paid subscriptions, and the private Oevra app are outside this public-website recreation. Contact retains the reference's Formspree destination; submission is a real message to Oevra, and must not be used for automated tests. The public Sanity content API may be used by the preserved runtime during client navigation. Images, fonts, CSS and JavaScript are hosted locally. Google Analytics is disabled for the recreation. Original author and image credits are retained.
+Set `contact.email` or `contact.endpoint` in `content/quanta.mjs` to the destination supplied by quanta, then rebuild and publish. These values are public client configuration; never put service secrets in them.
 
-Before adapting this for a different brand, replace the account links, contact form destination, legal terms, and content source with your own services.
+With an approved form-service endpoint, the form posts name, email and message as form data, checks the response, and preserves input on failure. With an email address only, it opens an email draft and asks the visitor to send it. An email app must be configured for that option.
+
+No destination has been provided yet. The form validates entries and honestly reports that the message has not been sent. A real delivery check remains pending destination configuration. Google Analytics is disabled.
+
+## Brand and visual assets
+
+The supplied `complete.svg` is used in the header, mobile menu and footer. `tabimage.svg` is the favicon. South's supplied photograph is `public/DSC_2898.JPG.jpeg`; its identity is unchanged, with a responsive crop and subtle CSS exposure and color treatment. The image-editing service rejected the camera's MPO encoding, so no generated replacement portrait is used.
+
+`public/assets/quanta/workflow.png` and `systems.png` were generated with ImageGen in text-to-image mode. The workflow brief requested spacious warm ivory modules, subtle sage connections and a neutral automated-process composition. The systems brief requested layered ivory and smoked-glass components, subtle convergence and generous negative space. Both avoid text, logos, robots and neon effects. `scripts/create-diagrams.mjs` creates four complementary SVG diagrams for pipelines, integrations, observability and system architecture.
+
+Use-case descriptions are illustrative capabilities, not client testimonials. The founder copy contains no invented awards, qualifications, client counts or employment history. Commercial scope is agreed with each client.
