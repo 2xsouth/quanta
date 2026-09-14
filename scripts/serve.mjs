@@ -14,5 +14,5 @@ http.createServer(async (req,res) => {
     const bytes = await fs.readFile(file);
     res.writeHead(200, {'Content-Type':types[path.extname(file)] || 'application/octet-stream','Cache-Control':'no-cache'});
     res.end(bytes);
-  } catch { res.writeHead(404, {'Content-Type':'text/plain'}).end('Not found'); }
-}).listen(port, '0.0.0.0', () => console.log(`Oevra recreation: http://localhost:${port}`));
+  } catch { res.writeHead(404, {'Content-Type':'text/plain'}).end('page not found'); }
+}).listen(port, '0.0.0.0', () => console.log(`quanta: http://localhost:${port}`));

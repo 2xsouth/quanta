@@ -1,0 +1,38 @@
+// One-time migration; the existing runtime and animation system are retained.
+import fs from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+const base='1756c9edbc159211b4c847719555d7003e94266f';
+const original=p=>execFileSync('git',['show',`${base}:${p}`],{encoding:'utf8',maxBuffer:8e6});
+await fs.mkdir('templates',{recursive:true});
+const html=original('public/index.html');
+let head=html.slice(html.indexOf('<head>')+6,html.indexOf('</head>'));
+head=head.replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta(?![^>]*charset|[^>]*name="viewport")[^>]*>/g,'').replace(/<link[^>]*rel="(?:icon|canonical)"[^>]*>/g,'');
+head=head.replace('<link rel="stylesheet" href="/replica.css">','<link rel="stylesheet" href="/quanta.css">');
+await fs.writeFile('templates/head.html',head);
+let runtime=original('public/_nuxt/DC_P54Ec.js');
+function swap(s,a,b){if(!s.includes(a))throw new Error(`Missing patch: ${a.slice(0,80)}`);return s.replace(a,b);}
+runtime=swap(runtime,'const{client:i,...r}=t,s=kO(i),o=e?Ri(e):void 0;return o&&(r.watch=r.watch||[],r.watch.push(o)),mH("sanity-"+EY(n+(o?JSON.stringify(o):"")),()=>s.fetch(n,o||{}),r)','const{client:i,...r}=t,o=e?Ri(e):void 0;const key="sanity-"+EY(n+(o?JSON.stringify(o):""));return mH(key,()=>Promise.resolve(window.__QUANTA_CONTENT__[key]),r)');
+runtime=swap(runtime,'setup(n){return(e,t)=>(on(),xs("svg",{class:xu(["svg-icon",`svg-icon--${n.name}`])','setup(n){return(e,t)=>["logo","logoType"].includes(n.name)?ii("img",{src:"/complete.svg",alt:"quanta",class:"quanta-logo",width:250,height:75}):(on(),xs("svg",{class:xu(["svg-icon",`svg-icon--${n.name}`])');
+runtime=swap(runtime,'st(P,{ref_key:"navLoginLinkRef",ref:v,to:et(r).appLinkLogin.url,target:"_blank"},{default:zn(()=>[gc(th(et(i).headerStrings.login),1)]),_:1},8,["to"]),','');
+runtime=swap(runtime,'st(P,{ref_key:"signupButtonRef",ref:g,to:et(r).appLink.url,target:"_blank",class:"signup-button rounded-[50%] p-15 | ds:p-20 border-[1px] border-current uppercase"},{default:zn(()=>[gc(th(et(i).headerStrings.signUp),1)]),_:1},8,["to"]),','');
+runtime=swap(runtime,'st(P,{to:et(r).internalLinks.contact.url,class:"ds:hidden"}','st(P,{ref:v,to:et(r).internalLinks.contact.url,class:"nav-contact"}');
+runtime=swap(runtime,'R=[p.value.$el,y.value.$el,v.value.$el,g.value.$el]','R=[p.value.$el,y.value.$el,v.value.$el]');
+const start=runtime.indexOf('ii("div",YK,[st(P,');
+const end=runtime.indexOf('st(P,{to:et(r).internalLinks.home.url,class:"absolute',start);
+if(start<0||end<0)throw new Error('Navigation structure changed');
+runtime=runtime.slice(0,start)+runtime.slice(end);
+runtime=runtime.replace('"aria-hidden":"true",onClick:b','"aria-label":"close menu",onClick:b').replace('},"Close",-1)','},"close",-1)').replace('},"Menu",-1)','},"menu",-1)').replaceAll('Page Not Found','page not found').replaceAll('Internal Server Error','internal server error');
+await fs.writeFile('public/_nuxt/DC_P54Ec.js',runtime);
+let c=original('public/_nuxt/C5ezDgDs.js');
+c=swap(c,'const p=y;return o(),l(','const p=y;if(!t.text)return r("span",{hidden:true,"aria-hidden":"true",class:"removed-cta"},[r("span"),r("svg")]);return o(),l(').replace('{to:"#"}','{to:"/contact"}');
+await fs.writeFile('public/_nuxt/C5ezDgDs.js',c);
+c=original('public/_nuxt/BzEkBf2h.js');
+c=swap(c,'n=S(()=>{const i=','n=S(()=>{if(t.assetId?.startsWith("/"))return t.assetId;const i=');
+await fs.writeFile('public/_nuxt/BzEkBf2h.js',c);
+c=original('public/_nuxt/BAugoq4T.js').replaceAll('VIEW SOURCES','view details').replaceAll('View sources','view details').replace('/assets/images/process-sample.png','/assets/quanta/pipeline.svg');
+await fs.writeFile('public/_nuxt/BAugoq4T.js',c);
+c=original('public/_nuxt/t9sCvZVC.js').replaceAll('Last Edit:','last updated:');
+await fs.writeFile('public/_nuxt/t9sCvZVC.js',c);
+c=original('public/_nuxt/CdqELerl.js').replace('https://formspree.io/f/xpwyekda','/contact').replaceAll('Your subscription has been successful.','thank you for your inquiry.');
+await fs.writeFile('public/_nuxt/CdqELerl.js',c);
+console.log('Updated shared navigation, logos, local content source and CTA rendering.');
