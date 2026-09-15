@@ -10,7 +10,16 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 .theme-light .header .quanta-logo,.nav-links .quanta-logo{filter:brightness(0)}
 .header .logo{width:auto!important}
 .header .nav-links{gap:5rem}
-.nav-contact{border:1px solid currentColor;border-radius:50%;padding:1.5rem 2rem}
+.nav-contact{border:0;border-radius:0;padding:0;background:none;outline:none}
+.nav-contact:focus-visible{outline:none;text-decoration:underline;text-underline-offset:.4em}
+.home-intro .intro-title>span:last-child:empty{display:none}
+.home-intro .intro-title>span:nth-child(3){white-space:nowrap;display:inline-block}
+.home-intro .intro-title>span:nth-child(3)>span[aria-hidden]{display:none}
+.features-title,.features-title h2{overflow:visible}
+.features-title h2{line-height:1.15;padding-block:.12em}
+.features-title h2 .text-gradient{padding-block:.1em;margin-block:-.1em;overflow:visible}
+.features-title h2>span.inline-flex{vertical-align:middle}
+.quanta-contact [type="submit"]::before,.quanta-contact [type="submit"]::after{content:none!important}
 .quanta-footer{gap:2.5rem;color:var(--color-offBlack);position:relative;z-index:3}
 .quanta-footer-brand img{width:15rem;height:auto;filter:brightness(0)}
 .quanta-footer-links{display:flex;gap:4rem;align-items:center}

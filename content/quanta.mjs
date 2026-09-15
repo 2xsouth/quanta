@@ -51,7 +51,7 @@ export const data = {
   },
   'sanity-HfYZGxTrQA':{
     _id:'home-intro',_type:'introSection',comingSoonText:'built around your business',
-    headlineLine1:'intelligent systems',headlineLine2:'that work with',headlineLine3:'the way you',headlineLine4:'work',
+    headlineLine1:'intelligent systems',headlineLine2:'that work with',headlineLine3:'the way you work',headlineLine4:'',
     description:'your team knows where the work gets stuck. we turn those bottlenecks into useful software — connecting your tools, automating repetitive steps and making information easier to act on.',
     learnMoreButton:cta(''),
     intro:[

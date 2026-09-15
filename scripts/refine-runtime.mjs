@@ -12,6 +12,7 @@ for(const name of ['BAxHY7gD.js','BACiWNTW.js'])await update(`public/_nuxt/${nam
 // waitlist form, old brand copy, images or third-party submission endpoint.
 await fs.writeFile('public/_nuxt/SB_XoiFm.js','export default {name:"RetiredWaitlist",render(){return null;}};\n');
 await update('public/_nuxt/CdqELerl.js',[['class:"max-ds:pb-0 | ds:h-svh','class:"quanta-contact max-ds:pb-0 | ds:h-svh']]);
+await update('public/_nuxt/CdqELerl.js',[['tag:"button",type:"submit",text:s(n)?.submitButton?.default','tag:"button",type:"submit","show-arrow":!1,"show-arrow-no-line":!1,text:s(n)?.submitButton?.default']]);
 // A queued resize callback can outlive the page during a route transition.
 await update('public/_nuxt/DtFrKc8W.js',[['const i=()=>{a.value?.disableTrigger','const i=()=>{if(!a.value?.$el)return;a.value?.disableTrigger']]);
 const sprite='public/assets/images/sprite.svg';
