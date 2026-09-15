@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import editorialSizes from '../content/editorial-sizes.json' with {type:'json'};
 import {data,site,contact,routeKeys} from '../content/quanta.mjs';
 const json=value=>JSON.stringify(value).replaceAll('<','\\u003c');
 function payload(route) {
@@ -13,7 +14,7 @@ function payload(route) {
 }
 const head=(await fs.readFile('templates/head.html','utf8')).replace('src="/_nuxt/DC_P54Ec.js"','src="/boot.js"');
 const config={public:{gaMeasurementId:'',sanity:{additionalClients:{},apiVersion:'2021-03-25',dataset:'production',disableSmartCdn:true,perspective:'raw',projectId:'quanta',stega:{},token:'',useCdn:false,visualEditing:false}},app:{baseURL:'/',buildId:'quanta-2026',buildAssetsDir:'/_nuxt/',cdnURL:''}};
-await fs.writeFile('public/content.js',`window.__QUANTA_CONTENT__=${json(data)};\nwindow.__QUANTA_CONTACT__=${json(contact)};\n`);
+await fs.writeFile('public/content.js',`window.__QUANTA_ASSET_META__=${json(editorialSizes)};\nwindow.__QUANTA_CONTENT__=${json(data)};\nwindow.__QUANTA_CONTACT__=${json(contact)};\n`);
 for(const route of Object.keys(routeKeys)) {
  const metadata=data[routeKeys[route].find(k=>data[k]?.metaDescription)]||data['sanity-ROEJnGK6rN'];
  const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');

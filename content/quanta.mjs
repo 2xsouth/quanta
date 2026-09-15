@@ -1,5 +1,7 @@
 // Editorial content for quanta. Existing component keys are retained so the
 // site's layouts and scroll choreography can remain intact.
+import {applyEditorialArt} from './apply-editorial-art.mjs';
+import editorialSizes from './editorial-sizes.json' with {type:'json'};
 const link = (url='/contact') => ({linkType:'page',openInNewTab:false,url});
 const cta = (text='contact us',url='/contact') => ({text,link:link(url)});
 const block = (text,style='normal') => ({_type:'block',_key: text.slice(0,30),style,markDefs:[],children:[{_type:'span',_key:'text',marks:[],text}]});
@@ -137,7 +139,7 @@ export const data = {
     _id:'about-founder',_type:'aboutFounderSection',sectionTitle:'meet the founder',founderName:'south',
     bioParagraph1:'south founded quanta to build practical technology around real business needs.',
     bioParagraph2:'his focus is combining software development and ai to solve operational problems — engineering useful systems that reduce unnecessary manual work and help teams spend their time where it matters.',
-    mainPortrait:{alt:'south, founder of quanta',asset:{_id:'/DSC_2898.JPG.jpeg',url:'/DSC_2898.JPG.jpeg',metadata:{dimensions:{width:4024,height:6048}}}},workspaceImage:diagram('engineering','a considered system architecture with connected components'),socialMediaLinks:null,
+    mainPortrait:null,workspaceImage:null,socialMediaLinks:null,
   },
   'sanity-Ijcd9nZe0t':{
     backgroundImage:null,headline:{line1:'a better way to work',line2:'starts with understanding it'},pretitle:'our engineering philosophy',primaryButton:cta(''),secondaryButton:cta(''),
@@ -169,6 +171,8 @@ export const data = {
     messages:{error:'your inquiry could not be sent. please try again.',success:'thank you. your inquiry has been sent.'},privacyPolicy:{text:'i have read the',linkText:'privacy notice',linkUrl:'/legal'},submitButton:{default:'send inquiry',loading:'sending…'},validation:{emailInvalid:'please enter a valid email address.',privacyRequired:'please confirm you have read the privacy notice.',required:'please complete this field.'},
   },
 };
+
+applyEditorialArt(data,editorialSizes);
 
 // This notice describes the website and inquiry workflow. Commercial project
 // terms are agreed with each client; no legal entity details are fabricated.

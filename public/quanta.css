@@ -29,7 +29,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 .subscription-card>p{padding-bottom:3rem;line-height:1.45}
 .subscription-card h3{line-height:1.1}
 .subscription-card header p{font-size:max(1.8rem,13px)}
-img[alt="south, founder of quanta"]{object-position:50% 66%;filter:brightness(1.04) saturate(.83);}
+img[src*="/assets/editorial/founder-portrait"]{object-position:50% 30%}
+img[src*="/assets/editorial/founder-seated"]{object-fit:contain;background:#e9e3d7}
+img[src*="/assets/editorial/benefit-"]{object-position:65% 50%}
+img[src*="/assets/editorial/principle-"]{object-position:70% 50%}
 .quanta-form-status{margin-top:2rem;font-family:suisse-regular,sans-serif;font-size:max(1.6rem,14px);line-height:1.4}
 .quanta-form-status[data-state="error"]{color:#8b3030}
 .quanta-form-status[data-state="success"]{color:#395d38}

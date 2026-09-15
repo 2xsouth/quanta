@@ -1,5 +1,10 @@
 import fs from 'node:fs/promises';
 async function update(file,changes){let source=await fs.readFile(file,'utf8');for(const [a,b]of changes)source=source.replaceAll(a,b);await fs.writeFile(file,source);}
+// Re-entered responsive timelines need the same shape as a fresh SplitText
+// result, so gradient line animation remains safe after breakpoint changes.
+await update('public/_nuxt/DC_P54Ec.js',[
+ ['?i[0].querySelectorAll(".line"):e.create(i,','?{lines:i[0].querySelectorAll(".line")}:e.create(i,'],
+]);
 await update('public/_nuxt/BAugoq4T.js',[
  ['x(P.author)+" ("+x(P.year)+")"','x(P.author)'],
  ['e("a",{href:P.url,target:"_blank",rel:"noopener noreferrer",class:"block underline text-black"},x(P.title),9,Ht)','e("p",{class:"block text-black"},x(P.title),1)'],

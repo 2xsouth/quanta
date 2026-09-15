@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {artRoles} from '../content/editorial-art.mjs';
 import {data,contact} from '../content/quanta.mjs';
 const root = path.resolve('dist');
 const routes = ['index.html','about/index.html','contact/index.html','legal/index.html'];
@@ -34,6 +36,22 @@ async function inspect(value,key=''){
  }
 }
 await inspect(data);
+const hashes=new Set();
+for(const name of Object.keys(artRoles)){
+ const bytes=await fs.readFile(path.join(root,'assets/editorial',`${name}.webp`));
+ const hash=createHash('sha256').update(bytes).digest('hex');
+ assert(!hashes.has(hash),`Duplicate artwork: ${name}`);hashes.add(hash);
+ for(const width of [480,960])assert((await fs.stat(path.join(root,'assets/editorial',`${name}-${width}.webp`))).size>0);
+}
+assert.equal(hashes.size,25);
+const founder=data['sanity-tU9tXQrhh6'];
+assert(founder.mainPortrait.asset.url.includes('founder-portrait.webp'));
+assert(founder.workspaceImage.asset.url.includes('founder-seated.webp'));
+assert(!JSON.stringify(data).includes('DSC_'));
+assert.equal(data['sanity-HfYZGxTrQA'].headlineLine3,'the way you work');
+assert.equal(data['sanity-HfYZGxTrQA'].headlineLine4,'');
+assert.equal(data['sanity-ABfqmSee7p'].submitButton.default,'send inquiry');
+assert((await fs.readFile(path.join(root,'_nuxt/CdqELerl.js'),'utf8')).includes('"show-arrow":!1,"show-arrow-no-line":!1'));
 assert.equal(data['sanity-3cf9ZrerVg'].plans.length,2);
 assert.equal(data['sanity-tU9tXQrhh6'].founderName,'south');
 assert.equal(data['sanity-hvXIMglF5S'].primaryButton.text,'join us');

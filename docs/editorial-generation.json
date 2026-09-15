@@ -1,0 +1,157 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "founder-portrait",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-2fabe620-fb6c-45ad-b708-7fe788bb6873.png",
+      "prompt": "Use case: identity-preserve. Create a portrait 1024x1536 editorial product photograph for quanta's founder section. Use the supplied photograph as the identity reference for south: preserve his recognizable facial structure, dark curly hair, thick eyebrows, short beard and moustache, brown collared shirt and natural body proportions. Transform south into a sophisticated premium matte soft-plastic collectible action figure with subtle molded material details, realistic but restrained stylization. Upper-body three-quarter portrait, calm expression, face fully visible and recognizable, generous safe framing. Warm ivory seamless studio background, soft window light, subtle muted sage reflected tones, premium minimal product photography. No original photographic skin texture; the person must visibly be a refined plastic figure. No bobblehead, no exaggerated features, no anime, no cartoon, no superhero, no text, no logos. The face must depict the supplied south, never a generic person.",
+      "width": 1024,
+      "height": 1536,
+      "webPath": "/assets/editorial/founder-portrait.webp"
+    },
+    {
+      "name": "benefit-reduce",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-7b8b893e-3dc2-4a61-b190-1e3cf45e7eb4.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Meaning: reducing repetitive manual work. A dense bundle of fine ivory rods passes through a muted sage sculptural collar, emerging as one beautifully smooth continuous ribbon. Physically tangible installation, object concentrated in right 60%, generous quiet negative space on left for text.",
+      "webPath": "/assets/editorial/benefit-reduce.webp"
+    },
+    {
+      "name": "benefit-fit",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-7a54a405-b281-4491-bdd7-cb78c4869e59.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Meaning: software fitting a business. Bespoke asymmetric ivory shell with a uniquely shaped sage insert hovering immediately above its matching recess, precision gap, sculptural product shot. Subject right 60%, calm negative space left for text.",
+      "webPath": "/assets/editorial/benefit-fit.webp"
+    },
+    {
+      "name": "benefit-information",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-6d27e04b-2b00-4475-affb-e48b9dba6e3d.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Meaning: making scattered information useful. Delicate translucent wafers resolve into one single faceted frosted-glass volume, stratified layers physically beautiful, no diagram. Object right 60%, calm negative space left.",
+      "webPath": "/assets/editorial/benefit-information.webp"
+    },
+    {
+      "name": "benefit-connect",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-0dd3b8fb-20d7-454e-b848-83f1f5276292.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Meaning: connecting different systems. Three different ceramic, satin metal and matte plastic loops joined through one continuous transparent glass link. Elegant physical interconnection, object right 60%, calm negative space left.",
+      "webPath": "/assets/editorial/benefit-connect.webp"
+    },
+    {
+      "name": "founder-seated",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-8aeadd77-f462-47c7-a824-d688fd2e07a0.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Identity reference image 1 is south. Create the SAME recognizable person as a premium collectible action figure sitting on a simple ivory cube, full body three-quarter side pose with his face turned towards camera. Preserve facial structure, curly dark hair, eyebrows and short beard, brown collared shirt. Subtle molded elbow and knee joints and a completely matte soft-plastic body and clothing, visibly a physical collector's figure. Normal adult proportions, not bobblehead. Rendered molded curls, sophisticated sculpted facial features, premium toy material, not actual photographic person. Generous safe margin around head and feet. No cartoon, anime, exaggerated face, superhero, or logos.",
+      "webPath": "/assets/editorial/founder-seated.webp"
+    },
+    {
+      "name": "benefit-evolve",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-c7a3c7c7-4a81-4b7a-8d23-53215f9f1a3e.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Meaning: built to evolve. A nested telescoping alabaster sculpture with one extended sage layer, quiet precise modular sculpture positioned in right 60% with empty left for text.",
+      "webPath": "/assets/editorial/benefit-evolve.webp"
+    },
+    {
+      "name": "capability-emblem",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-bb1ae378-4bf1-4706-8b54-06f6195aba2c.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Tiny heading inset. A SINGLE folded frosted-glass loop balanced on one pale stone plinth, bold readable silhouette, centered and fully framed. No plants or props, just one exquisite object.",
+      "webPath": "/assets/editorial/capability-emblem.webp"
+    },
+    {
+      "name": "capability-automation",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-bcefe99d-45dd-4c83-add7-28c39ee01d7d.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: workflow automation. A sculptural precision cam assembly: satin silver disk and ivory ceramic lever with one sage pivot, quiet kinetic machine as museum-worthy product still life. Centered fully framed, no decorative plants, no extra props.",
+      "webPath": "/assets/editorial/capability-automation.webp"
+    },
+    {
+      "name": "capability-custom",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-fab4840f-0ad0-4611-a2e3-b7098209de8b.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: custom ai software. Five uniquely irregular ivory sculptural pieces fitting into one monolith, sage keystone suspended above its matching space. Centered and fully framed. No plants, no unrelated props.",
+      "webPath": "/assets/editorial/capability-custom.webp"
+    },
+    {
+      "name": "capability-documents",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-0af79b63-bc6e-4948-acfb-6a004e38eaa7.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: document intelligence. A single translucent vellum accordion sculpture, beautifully folded planes and rhythmic soft shadows, a sculptural interpretation of reading and structure. Centered fully framed, no markings, no plants or props.",
+      "webPath": "/assets/editorial/capability-documents.webp"
+    },
+    {
+      "name": "capability-integrations",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-d8d45538-4bc9-4643-a4bd-d60f4cf3868e.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: ai integrations. Two unequal-diameter ivory ceramic tubular forms join through an exquisitely machined satin aluminum junction and sage gasket, unusual soft industrial sculpture. Centered fully framed, no plants or props.",
+      "webPath": "/assets/editorial/capability-integrations.webp"
+    },
+    {
+      "name": "capability-engineering",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-4c270f06-403e-402d-8ae7-8db7cc4c4a88.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: ongoing engineering, balance and refinement. A silver arc balancing instrument with sage counterweight on a limestone base, delicate physically plausible design. Centered fully framed, no plants or unrelated props.",
+      "webPath": "/assets/editorial/capability-engineering.webp"
+    },
+    {
+      "name": "about-purpose",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-a4db17e8-585f-4094-8771-7e69559ba028.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Square 1024x1024. About introduction lower inset, meaning: building with purpose. A sculptural chalk-white stair folds back into one continuous architectural loop, muted olive inner face, elegant negative space in center. Entire object in frame, no plants or extra props.",
+      "webPath": "/assets/editorial/about-purpose.webp"
+    },
+    {
+      "name": "about-observe",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-3004de42-8b40-494e-bfaa-f366f84d1852.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. About introduction upper inset, meaning: curiosity and understanding. A large clear optical lens held in thin satin frame hovering over an irregular chalk-white stone, lens gently magnifies its natural grain. Centered and fully framed, sophisticated single composition, no plants.",
+      "webPath": "/assets/editorial/about-observe.webp"
+    },
+    {
+      "name": "principle-understand",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-a4c1f6b3-dfb5-4226-b6dd-9e579ddcb470.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Principle: understand the process before building. An exploded pale stone shell revealing three nested organic components, beautiful gaps, refined physical section model. Composition concentrated in right 55%, empty quiet left for overlaid white text, softly shaded neutral backdrop. No plants or props.",
+      "webPath": "/assets/editorial/principle-understand.webp"
+    },
+    {
+      "name": "principle-people",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-193920bd-991e-4417-bd3b-b66d80c96a94.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Principle: build for people. Two ergonomic soft ivory plastic curves gently cradle a translucent sage sphere, comfort and care without literal hands. Composition in right 55%, quiet negative space left for text, soft shaded neutral studio. No plants.",
+      "webPath": "/assets/editorial/principle-people.webp"
+    },
+    {
+      "name": "principle-dependable",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-42801797-d2ad-42d2-bce8-7fbdf6118ea9.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Principle: dependable systems. An elegant physically plausible ivory arch with balanced stone spheres and a precise satin metal brace. Deliberate stable composition in right 55%, empty quiet left for text, shaded neutral studio. No plants.",
+      "webPath": "/assets/editorial/principle-dependable.webp"
+    },
+    {
+      "name": "process-iteration",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-9352c56d-417f-4dd5-95e7-85e74fc165bf.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Landscape 1536x1024. Process heading inset: understand, build, test, improve. An unfinished chalky plaster spiral beside a refined continuous ivory ceramic spiral counterpart, compact pair suggesting careful iteration, bold simple centered silhouette, entire forms visible. No plants, no props.",
+      "webPath": "/assets/editorial/process-iteration.webp"
+    },
+    {
+      "name": "collaboration-workflow",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-79af2521-0a88-4251-9fe6-3e74bdf7d591.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: built around your workflow. One supple ivory ribbon closely adapts around a bespoke asymmetric sage stone, a graceful open sculptural composition. Centered fully framed, no plants or props.",
+      "webPath": "/assets/editorial/collaboration-workflow.webp"
+    },
+    {
+      "name": "collaboration-scope",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-85ef1bf4-4049-4d05-a0b9-84733d474af8.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: clear project scope. A strong monolithic limestone aperture precisely frames one small satin silver sphere within its opening, focus and clarity. Centered full sculpture with generous margin, no plants or extra props.",
+      "webPath": "/assets/editorial/collaboration-scope.webp"
+    },
+    {
+      "name": "collaboration-control",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-accae557-8831-4a00-bbe2-4bc7b9d6ddb3.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: people stay in control. A tactile unmarked ivory sculptural control dial with a single ceramic sage fin, elegantly designed physical object, no markings or numbers. Centered and fully framed, no plants.",
+      "webPath": "/assets/editorial/collaboration-control.webp"
+    },
+    {
+      "name": "collaboration-documentation",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-cb8f471c-134a-471c-bb6b-a9c9854ee1a1.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: documented systems. Three frosted glass slabs held apart by precise small ivory spacers, edge-on oblique view reveals layered clarity, elegant negative space. Centered and fully framed, no plants.",
+      "webPath": "/assets/editorial/collaboration-documentation.webp"
+    },
+    {
+      "name": "collaboration-evolve",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-2e2f8474-d953-4b2c-a747-835b0295a42f.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Meaning: room to evolve. A branching ivory ceramic sculpture with a single empty fitting socket and one muted sage extension hovering nearby, graceful asymmetrical open form. Entire object safely framed, no plants or unrelated props.",
+      "webPath": "/assets/editorial/collaboration-evolve.webp"
+    },
+    {
+      "name": "contact-conversation",
+      "path": "C:\\Users\\brock\\.codex\\generated_images\\01a09c40-67c9-7a60-b7cd-dc0d0f7b6c08\\exec-0af02fce-2549-4f33-a1ca-e53952efc206.png",
+      "prompt": "Create one premium editorial product photograph for quanta, a creative technology company. Art direction: warm ivory seamless studio, pale stone, muted sage accents, soft window lighting, realistic matte ceramic/soft plastic/frosted glass with precise material detail, subtle contact shadows, restrained and sophisticated. Unusual minimal sculptural objects. No text, no logos, no neon, no robots, no circuit boards, no screens, no diagrams, no arrows. Portrait 1024x1536. Contact page image, meaning: an open conversation about your business. Two distinct hollow ivory sculptural shells face one another across a delicate gap, their inner surfaces muted sage. Elegant open shapes suggesting listening and exchange without literal faces. Compact centered arrangement completely within safe frame, generous space above and below, no plants, no props.",
+      "webPath": "/assets/editorial/contact-conversation.webp"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "benefit-reduce": {
+    "width": 1536,
+    "height": 1024
+  },
+  "benefit-fit": {
+    "width": 1536,
+    "height": 1024
+  },
+  "benefit-information": {
+    "width": 1536,
+    "height": 1024
+  },
+  "benefit-connect": {
+    "width": 1536,
+    "height": 1024
+  },
+  "benefit-evolve": {
+    "width": 1536,
+    "height": 1024
+  },
+  "capability-emblem": {
+    "width": 1536,
+    "height": 1024
+  },
+  "capability-automation": {
+    "width": 1024,
+    "height": 1536
+  },
+  "capability-custom": {
+    "width": 1024,
+    "height": 1536
+  },
+  "capability-documents": {
+    "width": 1024,
+    "height": 1536
+  },
+  "capability-integrations": {
+    "width": 1024,
+    "height": 1536
+  },
+  "capability-engineering": {
+    "width": 1024,
+    "height": 1536
+  },
+  "about-observe": {
+    "width": 1024,
+    "height": 1536
+  },
+  "about-purpose": {
+    "width": 1254,
+    "height": 1254
+  },
+  "principle-understand": {
+    "width": 1536,
+    "height": 1024
+  },
+  "principle-people": {
+    "width": 1536,
+    "height": 1024
+  },
+  "principle-dependable": {
+    "width": 1536,
+    "height": 1024
+  },
+  "founder-portrait": {
+    "width": 1024,
+    "height": 1536
+  },
+  "founder-seated": {
+    "width": 1024,
+    "height": 1536
+  },
+  "process-iteration": {
+    "width": 1536,
+    "height": 1024
+  },
+  "collaboration-workflow": {
+    "width": 1024,
+    "height": 1536
+  },
+  "collaboration-scope": {
+    "width": 1024,
+    "height": 1536
+  },
+  "collaboration-control": {
+    "width": 1024,
+    "height": 1536
+  },
+  "collaboration-documentation": {
+    "width": 1024,
+    "height": 1536
+  },
+  "collaboration-evolve": {
+    "width": 1024,
+    "height": 1536
+  },
+  "contact-conversation": {
+    "width": 1024,
+    "height": 1536
+  }
+}
